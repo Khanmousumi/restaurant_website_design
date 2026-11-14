@@ -1,0 +1,845 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FreshBite | Restaurant & Cafe</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-utensils"></i>
+            Fresh<span>Bite</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="#home" data-en="Home" data-bn="হোম">Home</a>
+
+            <a href="#about" data-en="About" data-bn="আমাদের সম্পর্কে">About</a>
+
+            <a href="#menu" data-en="Menu" data-bn="মেনু">Menu</a>
+
+            <a href="#offers" data-en="Offers" data-bn="অফার">Offers</a>
+
+            <a href="#gallery" data-en="Gallery" data-bn="গ্যালারি">Gallery</a>
+
+            <a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <!-- Language Switcher -->
+
+            <div class="language-switcher">
+
+                <button id="englishBtn"
+                    class="lang-btn active"
+                    onclick="changeLanguage('en')">
+                    EN
+                </button>
+
+                <button id="banglaBtn"
+                    class="lang-btn"
+                    onclick="changeLanguage('bn')">
+                    বাংলা
+                </button>
+
+            </div>
+
+            <a href="#reservation" class="header-btn"
+               data-en="Book a Table"
+               data-bn="টেবিল বুক করুন">
+                Book a Table
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <span class="hero-tag"
+            data-en="WELCOME TO FRESHBITE"
+            data-bn="ফ্রেশবাইটে আপনাকে স্বাগতম">
+            WELCOME TO FRESHBITE
+        </span>
+
+        <h1
+            data-en="Delicious Food <br> <span>Wonderful Moments</span>"
+            data-bn="সুস্বাদু খাবার <br> <span>আনন্দময় মুহূর্ত</span>">
+            Delicious Food <br>
+            <span>Wonderful Moments</span>
+        </h1>
+
+        <p
+            data-en="Discover delicious flavors made with fresh ingredients and lots of love. Enjoy every bite with your family and friends."
+            data-bn="সতেজ উপকরণ ও ভালোবাসায় তৈরি সুস্বাদু খাবারের স্বাদ নিন। পরিবার ও বন্ধুদের সঙ্গে উপভোগ করুন প্রতিটি মুহূর্ত।">
+            Discover delicious flavors made with fresh ingredients
+            and lots of love. Enjoy every bite with your family and friends.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#menu" class="btn btn-primary">
+                <span data-en="Explore Menu" data-bn="মেনু দেখুন">Explore Menu</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#about" class="btn btn-outline"
+               data-en="Discover More"
+               data-bn="আরও জানুন">
+                Discover More
+            </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <h3>100%</h3>
+                <p data-en="Fresh Food" data-bn="সতেজ খাবার">Fresh Food</p>
+            </div>
+
+            <div>
+                <h3>50+</h3>
+                <p data-en="Food Items" data-bn="খাবারের আইটেম">Food Items</p>
+            </div>
+
+            <div>
+                <h3>4.9</h3>
+                <p data-en="Customer Rating" data-bn="কাস্টমার রেটিং">Customer Rating</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section class="about section-padding" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-image">
+
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=85"
+                 alt="Restaurant interior">
+
+            <div class="experience-box">
+                <h3>10+</h3>
+                <p data-en="Years of Experience"
+                   data-bn="বছরের অভিজ্ঞতা">
+                    Years of Experience
+                </p>
+            </div>
+
+        </div>
+
+        <div class="about-content">
+
+            <span class="section-label"
+                data-en="ABOUT OUR RESTAURANT"
+                data-bn="আমাদের রেস্টুরেন্ট সম্পর্কে">
+                ABOUT OUR RESTAURANT
+            </span>
+
+            <h2
+                data-en="We Serve The Best <span>Food Experience</span>"
+                data-bn="আমরা পরিবেশন করি সেরা <span>খাবারের অভিজ্ঞতা</span>">
+                We Serve The Best <span>Food Experience</span>
+            </h2>
+
+            <p
+                data-en="Welcome to FreshBite! We believe that good food brings people together. Our chefs prepare every dish with fresh ingredients, care and passion."
+                data-bn="FreshBite-এ স্বাগতম! আমরা বিশ্বাস করি ভালো খাবার মানুষকে একত্রিত করে। আমাদের শেফরা সতেজ উপকরণ, যত্ন ও ভালোবাসা দিয়ে প্রতিটি খাবার তৈরি করেন।">
+                Welcome to FreshBite! We believe that good food brings
+                people together. Our chefs prepare every dish with
+                fresh ingredients, care and passion.
+            </p>
+
+            <div class="about-features">
+
+                <div>
+                    <i class="fa-solid fa-leaf"></i>
+                    <span data-en="Fresh Ingredients"
+                          data-bn="সতেজ উপকরণ">
+                        Fresh Ingredients
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-cheese"></i>
+                    <span data-en="Delicious Recipes"
+                          data-bn="সুস্বাদু রেসিপি">
+                        Delicious Recipes
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-heart"></i>
+                    <span data-en="Made With Love"
+                          data-bn="ভালোবাসায় তৈরি">
+                        Made With Love
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <span data-en="Best Quality"
+                          data-bn="সেরা মান">
+                        Best Quality
+                    </span>
+                </div>
+
+            </div>
+
+            <a href="#contact" class="btn btn-primary"
+               data-en="Learn More"
+               data-bn="আরও জানুন">
+                Learn More
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MENU SECTION ================= -->
+
+<section class="menu-section section-padding" id="menu">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label"
+                data-en="OUR POPULAR FOOD"
+                data-bn="আমাদের জনপ্রিয় খাবার">
+                OUR POPULAR FOOD
+            </span>
+
+            <h2 data-en="Explore Our <span>Delicious Menu</span>"
+                data-bn="দেখে নিন আমাদের <span>সুস্বাদু মেনু</span>">
+                Explore Our <span>Delicious Menu</span>
+            </h2>
+
+            <p data-en="Fresh, tasty and carefully prepared just for you."
+               data-bn="আপনার জন্য যত্নসহকারে তৈরি সতেজ ও সুস্বাদু খাবার।">
+                Fresh, tasty and carefully prepared just for you.
+            </p>
+
+        </div>
+
+        <div class="menu-grid">
+
+            <!-- Food 1 -->
+
+            <div class="food-card">
+
+                <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=700&q=85"
+                         alt="Chicken Biryani">
+                    <span class="food-badge"
+                        data-en="Popular"
+                        data-bn="জনপ্রিয়">
+                        Popular
+                    </span>
+                </div>
+
+                <div class="food-details">
+
+                    <h3 data-en="Chicken Biryani"
+                        data-bn="চিকেন বিরিয়ানি">
+                        Chicken Biryani
+                    </h3>
+
+                    <p data-en="Delicious aromatic rice with chicken."
+                       data-bn="মুরগির মাংস দিয়ে তৈরি সুস্বাদু সুগন্ধি বিরিয়ানি।">
+                        Delicious aromatic rice with chicken.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>৳ ২৫০</strong>
+                        <a href="#reservation" aria-label="Order Chicken Biryani">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food 2 -->
+
+            <div class="food-card">
+
+                <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=85"
+                         alt="Burger">
+                </div>
+
+                <div class="food-details">
+
+                    <h3 data-en="Special Burger"
+                        data-bn="স্পেশাল বার্গার">
+                        Special Burger
+                    </h3>
+
+                    <p data-en="Juicy burger with fresh vegetables and cheese."
+                       data-bn="তাজা সবজি ও চিজ দিয়ে তৈরি মজাদার বার্গার।">
+                        Juicy burger with fresh vegetables and cheese.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>৳ ১৮০</strong>
+                        <a href="#reservation" aria-label="Order Burger">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food 3 -->
+
+            <div class="food-card">
+
+                <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=700&q=85"
+                         alt="Sushi">
+                </div>
+
+                <div class="food-details">
+
+                    <h3 data-en="Fresh Sushi"
+                        data-bn="ফ্রেশ সুশি">
+                        Fresh Sushi
+                    </h3>
+
+                    <p data-en="Freshly prepared sushi with delightful flavors."
+                       data-bn="অসাধারণ স্বাদে তৈরি তাজা সুশি।">
+                        Freshly prepared sushi with delightful flavors.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>৳ ৩৫০</strong>
+                        <a href="#reservation" aria-label="Order Sushi">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food 4 -->
+
+            <div class="food-card">
+
+                <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=85"
+                         alt="Pasta">
+                </div>
+
+                <div class="food-details">
+
+                    <h3 data-en="Creamy Pasta"
+                        data-bn="ক্রিমি পাস্তা">
+                        Creamy Pasta
+                    </h3>
+
+                    <p data-en="Rich creamy pasta with a special sauce."
+                       data-bn="বিশেষ সস দিয়ে তৈরি মজাদার ক্রিমি পাস্তা।">
+                        Rich creamy pasta with a special sauce.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>৳ ২২০</strong>
+                        <a href="#reservation" aria-label="Order Pasta">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="center-button">
+            <a href="#reservation" class="btn btn-primary"
+               data-en="View Full Menu"
+               data-bn="সম্পূর্ণ মেনু দেখুন">
+                View Full Menu
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= OFFER SECTION ================= -->
+
+<section class="offer-section" id="offers">
+
+    <div class="container offer-content">
+
+        <span data-en="SPECIAL OFFER"
+              data-bn="বিশেষ অফার">
+            SPECIAL OFFER
+        </span>
+
+        <h2 data-en="Get 20% OFF <br> On Your First Order!"
+            data-bn="প্রথম অর্ডারে <br> পাচ্ছেন ২০% ছাড়!">
+            Get 20% OFF <br>
+            On Your First Order!
+        </h2>
+
+        <p data-en="Enjoy delicious food at a special price. Don't miss it!"
+           data-bn="বিশেষ দামে উপভোগ করুন সুস্বাদু খাবার। সুযোগটি হাতছাড়া করবেন না!">
+            Enjoy delicious food at a special price. Don't miss it!
+        </p>
+
+        <a href="#reservation" class="btn btn-primary"
+           data-en="Order Now"
+           data-bn="এখনই অর্ডার করুন">
+            Order Now
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GALLERY SECTION ================= -->
+
+<section class="gallery-section section-padding" id="gallery">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label"
+                data-en="OUR FOOD GALLERY"
+                data-bn="আমাদের খাবারের গ্যালারি">
+                OUR FOOD GALLERY
+            </span>
+
+            <h2 data-en="A Look At Our <span>Delicious World</span>"
+                data-bn="দেখে নিন আমাদের <span>সুস্বাদু খাবারের জগৎ</span>">
+                A Look At Our <span>Delicious World</span>
+            </h2>
+
+            <p data-en="A little taste of what makes FreshBite special."
+               data-bn="FreshBite-কে বিশেষ করে তোলে এমন কিছু খাবারের ছবি।">
+                A little taste of what makes FreshBite special.
+            </p>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=85" alt="Food gallery 1">
+
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=85" alt="Food gallery 2">
+
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=85" alt="Food gallery 3">
+
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=85" alt="Food gallery 4">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= RESERVATION SECTION ================= -->
+
+<section class="reservation-section section-padding" id="reservation">
+
+    <div class="container reservation-grid">
+
+        <div class="reservation-info">
+
+            <span class="section-label"
+                data-en="BOOK YOUR TABLE"
+                data-bn="আপনার টেবিল বুক করুন">
+                BOOK YOUR TABLE
+            </span>
+
+            <h2 data-en="Enjoy A Wonderful <span>Dining Experience</span>"
+                data-bn="উপভোগ করুন <span>চমৎকার খাবারের অভিজ্ঞতা</span>">
+                Enjoy A Wonderful <span>Dining Experience</span>
+            </h2>
+
+            <p data-en="Reserve your table and enjoy delicious moments with your loved ones."
+               data-bn="আপনার টেবিল বুক করুন এবং প্রিয়জনদের সঙ্গে উপভোগ করুন সুস্বাদু মুহূর্ত।">
+                Reserve your table and enjoy delicious moments with your loved ones.
+            </p>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <strong data-en="Call Us" data-bn="আমাদের কল করুন">Call Us</strong>
+                    <p>+880 1XXX-XXXXXX</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <strong data-en="Our Location" data-bn="আমাদের ঠিকানা">Our Location</strong>
+                    <p data-en="Dhaka, Bangladesh" data-bn="ঢাকা, বাংলাদেশ">
+                        Dhaka, Bangladesh
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <form class="reservation-form" id="reservationForm">
+
+            <h3 data-en="Make A Reservation"
+                data-bn="টেবিল বুকিং ফর্ম">
+                Make A Reservation
+            </h3>
+
+            <label for="guestName" data-en="Your Name" data-bn="আপনার নাম">
+                Your Name
+            </label>
+
+            <input type="text" id="guestName" name="name"
+                   placeholder="Enter your name" required>
+
+            <label for="guestEmail" data-en="Email Address" data-bn="ইমেইল ঠিকানা">
+                Email Address
+            </label>
+
+            <input type="email" id="guestEmail" name="email"
+                   placeholder="Enter your email" required>
+
+            <div class="form-row">
+
+                <div>
+                    <label for="bookingDate" data-en="Date" data-bn="তারিখ">Date</label>
+                    <input type="date" id="bookingDate" name="date" required>
+                </div>
+
+                <div>
+                    <label for="guestCount" data-en="Guests" data-bn="অতিথি সংখ্যা">Guests</label>
+                    <select id="guestCount" name="guests" required>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6 People</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit"
+                    data-en="Reserve Now"
+                    data-bn="এখনই বুক করুন">
+                Reserve Now
+            </button>
+
+            <p class="form-message" id="formMessage" aria-live="polite"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<section class="contact-section section-padding" id="contact">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label"
+                data-en="GET IN TOUCH"
+                data-bn="যোগাযোগ করুন">
+                GET IN TOUCH
+            </span>
+
+            <h2 data-en="We Would Love <span>To Hear From You</span>"
+                data-bn="আমরা <span>আপনার কথা শুনতে আগ্রহী</span>">
+                We Would Love <span>To Hear From You</span>
+            </h2>
+
+            <p data-en="Have a question? Feel free to contact us."
+               data-bn="কোনো প্রশ্ন আছে? নির্দ্বিধায় আমাদের সঙ্গে যোগাযোগ করুন।">
+                Have a question? Feel free to contact us.
+            </p>
+
+        </div>
+
+        <div class="contact-cards">
+
+            <div class="contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <h3 data-en="Phone Number" data-bn="ফোন নম্বর">Phone Number</h3>
+                <p>+880 1XXX-XXXXXX</p>
+            </div>
+
+            <div class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h3 data-en="Email Address" data-bn="ইমেইল ঠিকানা">Email Address</h3>
+                <p>hello@freshbite.com</p>
+            </div>
+
+            <div class="contact-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3 data-en="Our Address" data-bn="আমাদের ঠিকানা">Our Address</h3>
+                <p data-en="Dhaka, Bangladesh" data-bn="ঢাকা, বাংলাদেশ">
+                    Dhaka, Bangladesh
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-utensils"></i>
+                Fresh<span>Bite</span>
+            </a>
+
+            <p data-en="Good food, great moments and unforgettable memories. Thank you for being with us."
+               data-bn="ভালো খাবার, সুন্দর মুহূর্ত এবং স্মরণীয় স্মৃতি। আমাদের সঙ্গে থাকার জন্য ধন্যবাদ।">
+                Good food, great moments and unforgettable memories.
+                Thank you for being with us.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3 data-en="Quick Links" data-bn="গুরুত্বপূর্ণ লিংক">Quick Links</h3>
+
+            <a href="#home" data-en="Home" data-bn="হোম">Home</a>
+            <a href="#about" data-en="About Us" data-bn="আমাদের সম্পর্কে">About Us</a>
+            <a href="#menu" data-en="Our Menu" data-bn="আমাদের মেনু">Our Menu</a>
+            <a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+
+        </div>
+
+        <div class="footer-social">
+
+            <h3 data-en="Follow Us" data-bn="আমাদের অনুসরণ করুন">Follow Us</h3>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p data-en="© 2026 FreshBite Restaurant. All Rights Reserved."
+           data-bn="© ২০২৬ FreshBite Restaurant। সর্বস্বত্ব সংরক্ষিত।">
+            © 2026 FreshBite Restaurant. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+    // Language Change Function
+
+    function changeLanguage(lang) {
+
+        const elements = document.querySelectorAll("[data-en]");
+
+        elements.forEach(function(element) {
+
+            element.innerHTML = element.getAttribute("data-" + lang);
+
+        });
+
+        document.getElementById("englishBtn")
+            .classList.toggle("active", lang === "en");
+
+        document.getElementById("banglaBtn")
+            .classList.toggle("active", lang === "bn");
+
+        document.documentElement.lang = lang;
+
+        localStorage.setItem("selectedLanguage", lang);
+
+        // Update form placeholders
+        document.getElementById("guestName").placeholder =
+            lang === "en" ? "Enter your name" : "আপনার নাম লিখুন";
+
+        document.getElementById("guestEmail").placeholder =
+            lang === "en" ? "Enter your email" : "আপনার ইমেইল লিখুন";
+
+        // Update guest options
+        const guestOptions = document.querySelectorAll("#guestCount option");
+
+        const englishGuests = [
+            "1 Person", "2 People", "3 People",
+            "4 People", "5 People", "6 People"
+        ];
+
+        const banglaGuests = [
+            "১ জন", "২ জন", "৩ জন",
+            "৪ জন", "৫ জন", "৬ জন"
+        ];
+
+        guestOptions.forEach(function(option, index) {
+            option.textContent = lang === "en"
+                ? englishGuests[index]
+                : banglaGuests[index];
+        });
+
+    }
+
+
+    // Mobile Navigation
+
+    function toggleMenu() {
+
+        const nav = document.getElementById("navLinks");
+        const toggle = document.getElementById("menuToggle");
+
+        nav.classList.toggle("show");
+
+        const isOpen = nav.classList.contains("show");
+
+        toggle.setAttribute("aria-expanded", isOpen);
+
+        toggle.innerHTML = isOpen
+            ? '<i class="fa-solid fa-xmark"></i>'
+            : '<i class="fa-solid fa-bars"></i>';
+
+    }
+
+    // Close menu after clicking a link
+
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            document.getElementById("navLinks").classList.remove("show");
+
+            document.getElementById("menuToggle").innerHTML =
+                '<i class="fa-solid fa-bars"></i>';
+
+            document.getElementById("menuToggle")
+                .setAttribute("aria-expanded", "false");
+
+        });
+
+    });
+
+
+    // Remember selected language
+
+    const savedLanguage = localStorage.getItem("selectedLanguage");
+
+    if (savedLanguage === "bn") {
+        changeLanguage("bn");
+    }
+
+
+    // Reservation form demo
+
+    document.getElementById("reservationForm")
+        .addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const lang = document.documentElement.lang;
+
+            document.getElementById("formMessage").textContent =
+                lang === "bn"
+                ? "ধন্যবাদ! আপনার তথ্য গ্রহণ করা হয়েছে। এটি এখনো ডেমো ফর্ম।"
+                : "Thank you! Your information has been received. This is a demo form.";
+
+            this.reset();
+
+        });
+
+</script>
+
+</body>
+</html>
